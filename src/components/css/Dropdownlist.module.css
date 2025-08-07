@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #e5e5e5;
+  padding: 15px 120px;
+  flex-wrap: wrap;
+}
+
+.mainButton {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.optionButton {
+  background-color: #f5f9fb;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.optionButton:hover {
+  background-color: #F97316;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  >.icon{
+      color: #ffffff;
+  }
+}
+
+
+.icon {
+  font-size: 10px;
+  color: #f97316;
+}
+
+.searchBox {
+  background-color: #f5f9fb;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+  cursor: text;
+  flex: 1;
+}
+
+.searchIcon {
+  color: #f97316;
+  font-size: 14px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 1px;
+  background-color: #E5E5E5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-width: 160px;
+  z-index: 10;
+  padding: 20px 0;
+}
+.dropdownItem {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;  
+  position: relative;        
+  z-index: 0;
+}
+
+.dropdownItem:hover {
+  background-color: #f97316;     /* Lighten background on hover */
+  transform: translateY(-2px);  /* Move item slightly upward */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to "lift" */
+  z-index: 1;                 /* Lift above other elements if overlapping */
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .mainButton,
+  .optionButton,
+  .searchBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dropdownMenu {
+    min-width: 100%;
+  }
+}

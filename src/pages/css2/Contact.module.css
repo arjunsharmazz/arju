@@ -1,0 +1,148 @@
+
+
+.container {
+  padding: 60px 120px;
+  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactBox {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.formSection {
+  flex: 2;
+  padding: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  resize: none;
+}
+
+.sendButton {
+  align-self: flex-end;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.infoSection {
+  flex: 1;
+  background-color: #fff;
+  padding: 32px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.infoBlock {
+  display: flex;
+  gap: 16px;
+}
+
+.iconWrapper {
+  font-size: 24px;
+  background-color: #ffe9dc;
+  color: #ff6a00;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .contactBox {
+    flex-direction: column;
+  }
+
+  .formSection,
+  .infoSection {
+    padding: 24px;
+    border-left: none;
+  }
+
+  .inputRow {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .inputRow input {
+    width: 100%;
+  }
+
+  .sendButton {
+    width: 100%;
+    align-self: stretch;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .infoBlock {
+    align-items: flex-start;
+  }
+
+  .iconWrapper {
+    font-size: 20px;
+    padding: 8px;
+    height: 36px;
+    min-width: 36px;
+  }
+}

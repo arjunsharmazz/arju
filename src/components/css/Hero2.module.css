@@ -1,0 +1,86 @@
+.hero {
+  padding: 0px 120px;
+  background-color: #ffffff;
+  color: #111;
+}
+
+.header {
+  background-color: #e5e5e5;
+  padding: 0px 24px;
+  border-radius: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.header h2 {
+  font-weight: 500;
+}
+.header p {
+  color: #f97316;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.header p::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f97316;
+  transition: width 0.3s ease;
+}
+
+.header p:hover {
+  color: #f97316;
+}
+
+.header p:hover::after {
+  width: 100%;
+}
+
+.header span {
+  color: #f97316;
+}
+
+.header a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0px 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding: 12px 16px;
+    font-size: 16px;
+    gap: 6px;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 16px;
+  }
+}

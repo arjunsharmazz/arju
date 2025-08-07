@@ -1,0 +1,154 @@
+.checkoutContainer {
+  padding: 2rem 120px;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input,
+.form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+}
+
+.placeOrderBtn {
+  padding: 0.9rem;
+  background-color: #f97316;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.placeOrderBtn:hover {
+  background-color: #ea580c;
+}
+
+.summary {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.itemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.itemRow img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+.progress {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.step {
+  color: #aaa;
+}
+
+.stepActive {
+  color: orange;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .checkoutContainer {
+    padding: 1.5rem 20px;
+  }
+
+  .progress {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form,
+  .summary {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .placeOrderBtn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .summary {
+    max-height: none;
+  }
+
+  .itemRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .itemRow img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .totalRow {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

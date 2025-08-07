@@ -1,0 +1,108 @@
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 120px;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.formSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.createBtn {
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  background-color: white;
+  gap: 8px;
+  cursor: pointer;
+}
+
+a {
+  color: #ff6a00;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 24px;
+    height: auto;
+  }
+
+  .imageSection {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .image {
+    height: 250px;
+    border-radius: 12px;
+  }
+
+  .formSection {
+    padding: 0;
+  }
+
+  form {
+    gap: 12px;
+  }
+
+  input,
+  .createBtn,
+  .googleBtn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

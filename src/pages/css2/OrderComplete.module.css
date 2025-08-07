@@ -1,0 +1,157 @@
+.orderWrapper {
+  padding: 2rem 120px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+.orderBox {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+}
+
+.itemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.itemRow img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.itemDetails {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.itemDetails h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.itemTotal {
+  font-weight: bold;
+  color: #333;
+}
+
+.subtotalRow {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.totalLabel {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalUsd {
+  color: red;
+  font-weight: bold;
+}
+
+.detailsGrid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.detailsGrid p {
+  margin: 0.2rem 0;
+  color: #555;
+}
+
+.prices {
+  text-align: right;
+}
+
+.totalAmount {
+  color: red;
+  font-weight: bold;
+}
+
+.statusPaid {
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.continueBtn {
+  margin-top: 2rem;
+  background-color: #f97316;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continueBtn:hover {
+  background-color: #ea580c;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .orderWrapper {
+    padding: 2rem 24px;
+  }
+
+  .itemRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .itemRow img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    margin-right: 0;
+  }
+
+  .itemDetails {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .detailsGrid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .prices {
+    text-align: left;
+  }
+
+  .totalLabel {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .continueBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
