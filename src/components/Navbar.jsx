@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import styles from "./css/Navbar.module.css";
 import { FaBars, FaUserCircle, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
   };
-
+const cartItems = useSelector(state => state.cart.cartItems);
   return (
     <nav className={styles.navbar}>
       <div className={styles.menuWrapper}>
@@ -27,7 +27,7 @@ const Navbar = () => {
               <FaUserCircle className={styles.linkIcon} /> Login
             </Link>
             <Link to="/cart" onClick={() => setMenuOpen(false)}>
-              <FaShoppingCart className={styles.linkIcon} /> Cart
+              <FaShoppingCart className={styles.linkIcon} /> Cart 
             </Link>
           </div>
         )}
@@ -45,9 +45,9 @@ const Navbar = () => {
         <Link to="/login">
           <FaUserCircle className={styles.linkIcon} /> Login
         </Link>
-        <div className={styles.divider} />
+        <div className={styles.divider}/>
         <Link to="/cart">
-          <FaShoppingCart className={styles.linkIcon} /> Cart
+          <FaShoppingCart className={styles.linkIcon} /> Cart ({cartItems.length})
         </Link>
       </div>
     </nav>

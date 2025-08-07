@@ -121,11 +121,6 @@ const Dropdownlist = ({ productdata, setrproductdata }) => {
         <div className={styles.dropdownItem} onClick={women}>Clearance</div>
         <div className={styles.dropdownItem}onClick={women} >Buy 1 Get 1</div>
       </Dropdown>
-
-      <div className={styles.searchBox}>
-        <FaSearch className={styles.searchIcon} />
-        <span>Search</span>
-      </div>
     </div>
   );
 };

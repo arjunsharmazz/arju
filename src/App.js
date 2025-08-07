@@ -20,6 +20,7 @@ import Product from './pages/Product.jsx';
 import Checkout from './pages/Checkout.jsx';
 import OrderComplete from './pages/OrderComplete.jsx';
 import ScrollToTop from './pages/ScrollToTop.jsx';
+import Services from './pages/Services.jsx';
 
 function App() {
   const [productdata, setrproductdata] = useState([]);
@@ -40,7 +41,6 @@ function App() {
       </div>
     );
   }
-
   return (
     <div className="App">
         <ScrollToTop />
@@ -60,6 +60,7 @@ function App() {
         <Route path="/pleasewait" element={<Pleasewait />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/ordercomplete" element={<OrderComplete />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/product" element={<Product productdetails={productdetails} />} />
         <Route path="/productdetails" element={<Productdetails productdata={productdata} setproductdetails={setproductdetails} />} />
       </Routes>

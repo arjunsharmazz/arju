@@ -1,0 +1,249 @@
+.aboutWrapper {
+  padding: 120px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+.headerSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.headerText {
+  flex: 1;
+}
+
+.headerText h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.headerText p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.headerImage img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.whoWeAreSection {
+  margin-bottom: 120px;
+}
+
+.whoWeAreSection h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.whoWeAreSection h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.whoWeAreSection p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.featuresSection {
+  margin-bottom: 120px;
+}
+
+.featuresSection h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.featureCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.visionSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.visionImage img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.visionText {
+  flex: 1;
+}
+
+.visionText h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.growthSection {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.growthImage img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.teamSection {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.teamSection h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.teamMember {
+  text-align: center;
+}
+
+.teamMember img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.teamMember h3 {
+  margin: 10px 0 5px;
+}
+
+.teamMember p {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .aboutWrapper {
+    padding: 60px 20px;
+  }
+
+  .headerSection,
+  .visionSection {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .headerText h1,
+  .featuresSection h2,
+  .teamSection h2,
+  .visionText h2,
+  .whoWeAreSection h2 {
+    font-size: 24px;
+  }
+
+  .headerText p,
+  .whoWeAreSection p,
+  .visionText p,
+  .growthSection p {
+    font-size: 15px;
+  }
+
+  .featureCards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
+  .growthImage img,
+  .visionImage img,
+  .headerImage img {
+    max-width: 100%;
+  }
+
+  .teamGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamMember img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutWrapper {
+    padding: 40px 15px;
+  }
+
+  .headerText h1 {
+    font-size: 22px;
+  }
+
+  .headerText p {
+    font-size: 14px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .teamMember h3 {
+    font-size: 16px;
+  }
+
+  .teamMember p {
+    font-size: 13px;
+  }
+}

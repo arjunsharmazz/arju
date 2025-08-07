@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import styles from './css/Footer.module.css';
 import DataContext, { Mencontext, Under1, Under2, Under3, Under4, Under5, Womencontext } from '../context/DataContext';
 
-const Footer = ({setrproductdata}) => {
+const Footer = ({setrprocxductdata,setproductdetails}) => {
   const navigate = useNavigate();
   //electronics
     const { data } = useContext(DataContext);
@@ -36,36 +36,35 @@ const Footer = ({setrproductdata}) => {
 
   const men=() => {
     console.log('typeof setrproductdata:', typeof setrproductdata);
-    setrproductdata(Men);
+    setrprocxductdata(Men);
     navigate("/productdetails");
   }
-  const women=(e) => {
-    e.preventDefault();
-    setrproductdata(Women);
+  const women=(a) => {
+    setrprocxductdata(a);
     navigate("/productdetails");
   }
   const u1=() => {
-    setrproductdata(under1);
+    setrprocxductdata(under1);
     navigate("/productdetails");
   }
   const u2=() => {
-    setrproductdata(under2);
+    setrprocxductdata(under2);
     navigate("/productdetails");
   }
   const u3=() => {
-    setrproductdata(under3);
+    setrprocxductdata(under3);
     navigate("/productdetails");
   }
   const u4=() => {
-    setrproductdata(under4);
+    setrprocxductdata(under4);
     navigate("/productdetails");
   }
   const u5=() => {
-    setrproductdata(under5);
+    setrprocxductdata(under5);
     navigate("/productdetails");
   }
   const electronics=() => {
-    setrproductdata(laptops);
+    setrprocxductdata(laptops);
     navigate("/productdetails");
   }
   return (
@@ -91,7 +90,7 @@ const Footer = ({setrproductdata}) => {
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/termandcondition">Terms & Conditions</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
-            <li><Link to="/privacyp">Privacy Policy</Link></li>
+            <li><Link to="/services">Our Services</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/refund">Refund & Return Policy</Link></li>
             <li><Link to="/pagenotfound">pagenotfound</Link></li>
@@ -101,14 +100,15 @@ const Footer = ({setrproductdata}) => {
 
         <div className={styles.linkGroup}>
           <h4>Shop</h4>
-          <ul>
-            <li onClick={()=>women} >Women</li>
-            <li onClick={men}>Men</li>
-            <li onClick={electronics}>Electronics</li>
-            <li onClick={u5}>New Arrivals</li>
-            <li onClick={u3}>Best Sellers</li>
-            <li onClick={u1}>Sale</li>
-          </ul>
+         <ul>
+  <li className={styles.linkItem} onClick={() => women(Women)}>Women</li>
+  <li className={styles.linkItem} onClick={men}>Men</li>
+  <li className={styles.linkItem} onClick={electronics}>Electronics</li>
+  <li className={styles.linkItem} onClick={u5}>New Arrivals</li>
+  <li className={styles.linkItem} onClick={u3}>Best Sellers</li>
+  <li className={styles.linkItem} onClick={u1}>Sale</li>
+</ul>
+
         </div>
       </div>
 
